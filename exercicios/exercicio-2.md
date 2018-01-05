@@ -140,4 +140,13 @@ system.indexes
 Quando está em perigo ele rola o seu corpo na areia e ataca
 > db.pokemons.save(poke)
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.pokemons.find({name:'Sandshrew'})
+{ 
+    "_id" : ObjectId("5a4f73c1323fd547e724e758"),
+    "name" : "Sandshrew", 
+    "description" : "Quando está em perigo ele rola o seu corpo na areia e ataca", 
+    "attack" : 75, 
+    "defense" : 85, 
+    "height" : 0.6 
+}
 ```
